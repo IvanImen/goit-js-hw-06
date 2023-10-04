@@ -6,7 +6,7 @@ console.dir(input);
 
 function textLenght() {
     const expectedLength = parseInt(input.getAttribute('data-length'));
-    const currentLength = input.value.length;
+    const currentLength = input.value.trim().length;
 
     if (currentLength === expectedLength) {
       input.classList.remove('invalid');
